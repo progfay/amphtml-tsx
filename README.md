@@ -1,6 +1,6 @@
-# html-tsx
+# amphtml-tsx
 
-Transform tsx to HTML string
+Transform tsx to AMP HTML string
 
 ## Setup
 
@@ -18,7 +18,7 @@ Transform tsx to HTML string
 ## Usage
 
 ```tsx
-import { pragma } from 'html-tsx'
+import { pragma } from 'amphtml-tsx'
 
 const renderToString = (name: string) => (
   <div class="one two three">

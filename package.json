@@ -8,7 +8,8 @@
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "scripts": {
-    "prebuild": "rm -rf lib",
+    "generate": "node ./scripts/index.js > ./src/ampElement.ts",
+    "prebuild": "rm -rf lib && npm run generate",
     "build": "tsc -p ./tsconfig.json",
     "prepare": "npm run build",
     "start": "node ./lib/index.js",
@@ -43,6 +44,7 @@
     "eslint-plugin-node": "^9.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
+    "node-fetch": "^2.6.0",
     "typescript": "^3.5.2"
   }
 }
